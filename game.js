@@ -27,11 +27,11 @@ Array.prototype.memory_tile_shuffle = function(){
 
 function newBoard(){
 	stop();
-	tiles_flipped = 0;
 	flips = 0;
 	document.getElementById("flips").innerHTML = flips;
 	timerInterval = 0;
 	document.getElementById("time").innerHTML = timerInterval;
+	tiles_flipped = 0;
 	var output = '';
 	memory_array.memory_tile_shuffle();
 	for(var i = 0; i < memory_array.length; i++){
