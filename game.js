@@ -41,6 +41,8 @@ function newBoard(){
 }
 
 function memoryFlipTile(tile,val){
+	if(flips == 0)
+		start();
 	flips +=1;
 	document.getElementById("flips").innerHTML = flips;
 	if(memory_values.length < 2){
