@@ -72,6 +72,8 @@ function memoryFlipTile(tile,val){
 				tile_4.style.boxShadow='0 0 0 10px blue';
 				var tile_5 = document.getElementById(memory_tile_ids[1]);
 				tile_5.style.boxShadow='0 0 0 10px blue';
+				document.getElementById(memory_tile_ids[0]).style.pointerEvents = 'none';
+				document.getElementById(memory_tile_ids[1]).style.pointerEvents = 'none';
 				memory_values = [];
 				memory_tile_ids = [];
 				if(tiles_flipped == memory_array.length){
