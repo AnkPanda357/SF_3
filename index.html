@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Gaming website of Ankit Kumar Panda">
+	<meta name="keywords" content="Ankit, Panda, game">
+	<meta name="author" content="Ankit Kumar Panda">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Let's Play a Game</title>
+	<link rel="icon" href="icon.jpg" type="image/x-icon"/>
+	<link rel="stylesheet" href="game.css">
+	<script src="game.js"></script>
+	</head>
+   
+<body>
+	<h1 class="heading">Memory Game</h1>
+	<div id="buttons">
+		<button onclick="newBoard(); start();">New Game</button>
+		<br>
+		<button onclick="instru();">Instruction</button>
+		<br>
+        <p id="timer">Timer: <a id="time">0</a></p>
+		<br>
+        <p id="count">Counter: <a id="flips">0</a></p>
+	</div>
+	<div id="memory_board"></div>
+	<script>newBoard(); start();</script>	
+</body>
+
+</html>
