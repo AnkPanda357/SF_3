@@ -17,6 +17,11 @@ Array.prototype.memory_tile_shuffle = function(){
 
 function newboard(){
 	tiles_flipped = 0;
+	document.getElementById('tiles_flipped');
+	clicks= 0;
+	document.getElementById('clicks');
+	timeInterval= null;
+	document.getElementById('timeInterval');
 	var output = '';
 	memory_array.memory_tile_shuffle();
 	for(var i = 0; i < memory_array.length; i++){
